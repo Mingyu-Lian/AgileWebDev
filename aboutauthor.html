@@ -3,20 +3,127 @@
 
 <head>
     <title> About Author - Arthur</title>
-    
+    <meta name="author" content="Arthur Lian">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="logo.png">
+    <script src="myScript.js"></script>
 
 </head>
 
-
-
 <body>
-    <div>
-        <p> </p> <!-- put the three catelogs here-->
+    <!--header section-->
+    <nav class="func-bar"> 
+        <ul>
+            <li > change color</li>
+            <li > change language</li>
+            <li > print page</li>
+        </ul>
+
+    </nav>
+
+    <!--logoheader Section-->
+
+    <section class = "logoheader" >
+
+        <img src = "logo.png" alt="cannot find the resource" class = "logo">
+        <nav class="navi-bar"> 
+            <ul>
+                <li > <a href = "Conception.html">Conception</a></li>
+                <li > <a href = "History.html">History</a></li>
+                <li > <a href = "Aboutauthor.html">Author</a></li>
+            </ul>
+
+        </nav>
+    </section>
+    <!--content-picture-->
+    <section class = "author-video">
+        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+            <source src="FilmWA.mp4" type="video/mp4">
+          </video>
+          <div class="about-me">
+            <h1>about me </h1>
+            <p>about me </p>
+          </div>
     
 
 
-    </div>
+    </section>
     
+    <!--content-general-->
+    <section class = "author-general">
+         <p>
+            <img src="ArthurLian.JPG" alt="Cannot find resource" style="float:left;width: 200pt;">
+            Currently pursuing a Master’s in Information Technology at UWA, 
+            I have completed the first semester with a HD average mark and earned the BCG GAMMA Prize for computational data analysis.
+            Holding a Master’s in BA and Supply Chain Mgmt, I bring a strong academic foundation. <br>    
+            I have gained valuable experience in leading global chemical, pharmaceutical, and FMCG companies.
+            Within the supply chain sector, I initiated and contributed to digitalization and data visualization projects elevating departmental efficiency.
+            I am keen on exploring new techs to enhance work efficiency - this passion drives me to pursue further studies in the IT industry.
+
+
+         </p>
+        </section>
+
+    <!--content-work-->
+    <section class="author-section">
+        
+        <div class="section-title" id="sec1"  onclick="toggleSection('1')">
+            <span id="arrow1">▼</span> WORK EXPERIENCE
+        </div>
+
+        <div class="hidden" id="section-details1">
+        Here are the details about the section. Click the tit   ``          le to fold/unfold this section.
+        </div>
+
+    </section>
+
+    <!--content-education-->
+    <section class="author-section" >
+        <div class="section-title" id="sec2"  onclick="toggleSection('2')">
+            <span id="arrow2">▼</span> WORK EXPERIENCE
+        </div>
+
+        <div class="hidden" id="section-details2">
+        Here are the details about the section. Click the tit   ``          le to fold/unfold this section.
+        </div>
+
+
+    </section>
+
+    <!--content-other experience-->
+    <section class="author-section" >
+        <div class="section-title" id="sec3"  onclick="toggleSection('3')">
+            <span id="arrow3">▼</span> WORK EXPERIENCE
+        </div>
+
+        <div class="hidden" id="section-details3">
+        Here are the details about the section. Click the tit   ``          le to fold/unfold this section.
+        </div>
+
+    </section>
+    <!--content-skills-->
+    <section class="author-section" >
+        <div class="section-title" id="sec4"  onclick="toggleSection('4')">
+            <span id="arrow4">▼</span> WORK EXPERIENCE
+        </div>
+
+        <div class="hidden" id="section-details4">
+        Here are the details about the section. Click the tit   ``          le to fold/unfold this section.
+        </div>
+
+
+    </section>
+    <!--footer-->   
+    <section >
+        <div class="author-footer">
+            <p>
+                Cooko
+            </p>
+            this is footer
+        </div>
+
+    </section>
 
 
 </body>

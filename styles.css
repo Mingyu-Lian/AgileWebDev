@@ -1,3 +1,78 @@
-body {
-    background-color: blue
+
+
+
+.logoheader {
+    padding: 10px 10px 70px 50px;
+    background-color :rgb(212, 142, 142);
+}
+
+.logo{ 
+    width:100px; height:100px
+}
+
+.author-footer{
+    height :300px;
+    background-color: gray;
+}
+
+.author-video {
+    position: relative;
+    width: 100%; 
+    height: 100%; 
+    overflow: hidden;
+  }
+  
+.author-video video {
+    position: absolute;
+    top: 25%;
+    bottom: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    height: 130%;
+    z-index: -1;
+  }
+  
+
+.about-me{
+    font-size: 500%;
+    position: relative;
+    z-index: 1;
+    color: white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    padding-top: 5px;
+    opacity: 0.8;
+}
+
+.author-general {
+    height: 300px;
+    padding: 10px;
+}
+
+
+
+.section-title {
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+.author-section #sec1 {
+    background-color: aquamarine;
+    height: 100px;
+}
+.author-section #sec2 {
+    background-color: rgb(174, 122, 48);
+    height: 100px;
+}
+.author-section #sec3 {
+    background-color: rgb(148, 104, 203);
+    height: 100px;
+}
+.author-section #sec4 {
+    background-color: rgb(208, 190, 230);
+    height: 100px;
 }
