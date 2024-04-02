@@ -8,72 +8,110 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/x-icon" href="logo.png">
     <script src="myScript.js"></script>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!--for icons-->
 </head>
 
 <body>
     <!--header section-->
     <nav class="func-bar"> 
-        <ul>
-            <li > change color</li>
-            <li > change language</li>
-            <li > print page</li>
+        <ul >
+            <li class = "linebar funcli"> Day/Night</li>
+            <li class = "linebar funcli"> Language</li>
+            <li class = "linebar funcli"> Print</li>
         </ul>
-
     </nav>
 
     <!--logoheader Section-->
-
     <section class = "logoheader" >
 
-        <img src = "logo.png" alt="cannot find the resource" class = "logo">
+        <img src = "fulllogo.png" alt="cannot find the resource" class = "fulllogo" style="float:left">
+        
         <nav class="navi-bar"> 
             <ul>
-                <li > <a href = "Conception.html">Conception</a></li>
-                <li > <a href = "History.html">History</a></li>
-                <li > <a href = "Aboutauthor.html">Author</a></li>
+                <li class = "linebar logobar"> <a href = "Conception.html">CONCEPTION</a></li>
+                <li class = "linebar logobar"> <a href = "History.html">HISTORY</a></li>
+                <li class = "linebar logobar"> <a href = "Aboutauthor.html">AUTHOR</a></li>
             </ul>
 
         </nav>
     </section>
-    <!--content-picture-->
+
+    <!--content-video-->
     <section class = "author-video">
         <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
             <source src="FilmWA.mp4" type="video/mp4">
           </video>
-          <div class="about-me">
-            <h1>about me </h1>
-            <p>about me </p>
-          </div>
-    
-
-
+          <div >
+            <h1 class="about-me">ABOUT ME ... </h1>
+            <p class="hash"> 
+                <span>UWA</span>
+                <span>-</span>
+                <span>IT</span>
+                <span>-</span>
+                <span>Supply Chain</span>
+                <span>-</span>
+                <span>Photography</span> </p>
+        </div>
+        <div class="videologo">
+          <img src="fulllogogray.png" alt="Cannot find resource" >
+        </div>
     </section>
     
     <!--content-general-->
-    <section class = "author-general">
-         <p>
-            <img src="ArthurLian.JPG" alt="Cannot find resource" style="float:left;width: 200pt;">
-            Currently pursuing a Master’s in Information Technology at UWA, 
-            I have completed the first semester with a HD average mark and earned the BCG GAMMA Prize for computational data analysis.
-            Holding a Master’s in BA and Supply Chain Mgmt, I bring a strong academic foundation. <br>    
-            I have gained valuable experience in leading global chemical, pharmaceutical, and FMCG companies.
-            Within the supply chain sector, I initiated and contributed to digitalization and data visualization projects elevating departmental efficiency.
-            I am keen on exploring new techs to enhance work efficiency - this passion drives me to pursue further studies in the IT industry.
+    <section>
+         <div class = "author-general">
+            <img src="ArthurLian.JPG" alt="Cannot find resource" class="portrait">
 
-
-         </p>
-        </section>
+            <div class = "general-text">
+                <h2>Arthur <span class="color">Lian</span></h2>
+                <p>Currently pursuing a <span>Master’s in Information Technology</span> at <span>UWA</span>, 
+                I have completed the first semester with a HD average mark and earned the BCG GAMMA Prize for computational data analysis.
+                Holding a Master’s in BA and Supply Chain Mgmt, I bring a strong academic foundation. <br>  <br>  
+                I have gained valuable experience in leading global chemical, pharmaceutical, and FMCG companies.
+                Within the <span>supply chain </span>sector, I initiated and contributed to digitalization and data visualization projects elevating departmental efficiency.
+                I am keen on exploring new techs to enhance work efficiency - this passion drives me to pursue further studies in the IT industry.
+                </p>
+            </div>
+        </div>
+    </section>
 
     <!--content-work-->
     <section class="author-section">
         
         <div class="section-title" id="sec1"  onclick="toggleSection('1')">
-            <span id="arrow1">▼</span> WORK EXPERIENCE
+             WORK EXPERIENCE<br><br><span id="arrow1">▼</span>
         </div>
 
         <div class="hidden" id="section-details1">
-        Here are the details about the section. Click the tit   ``          le to fold/unfold this section.
+            <ul>
+                <li class="maintitle">Strategy Assistant (AI & Automation) Intern • <a href="https://www.landgate.wa.gov.au/" title = "go to Landgate" target="_blank">Landgate</a></li>
+                    <p class="timecity">Perth, Australia • February 2024 – Present</p>
+                        <p>• Responsible for strategy analysis on the trend of AI & Automation. Dig the impacts and changes brought from the new trend to the business operating model and business units.</p>
+                <li>Supply Chain Planner • <a href="https://www.basf.com/global/en.html" title = "go to BASF" target="_blank">BASF</a></li>
+                    <p class="timecity">Shanghai • January 2022 – May 2023 • Greater China & Asia Pacific Head Office</p>
+                    <p>
+                        • Executed End-to-End Supply Chain Planning, overseeing demand forecasting, allocation planning.<br>
+                        • Initiated the Demand Review Visualization Project, delivered PBI dashboards for 3 product groups. <br>
+                        • Initiated the Forecast Accuracy Visual Project. Developed an automated Power BI Dashboard to monitor the Forecast Accuracy (FCA) rate.<br>
+                        • Master data maintenance and data updates. <br>
+                    </p>
+                <li>Supply Chain Intern (Project Team) • <a href="https://www.sanofi.com/en" title = "go to Sanofi" target="_blank">SANOFI</a></li>
+                    <p class="timecity">Shanghai • July 2021 – December 2021, April 2020 – December 2020 • Greater China Head Office</p>
+                    <p>
+                        • Assisted Dupixent®️ Launch Project in China. The project shortern the time from IDL to Launch to 25 days, breaking the time record in the field in China.<br>
+                        • Engaged in Reagents Purchasing Bidding Program. Established a quant criteria model and analyzed quotations for 4 tending suppliers.<br>
+                        • Participated in Vaccine Traceability Project. Drew comparison and analysis charts for 5 brands loggers and prevented the potential QA risks.<br>
+                        • WH & TRS cost summarizes for drugs/VXs across all China DCs.<br>
+                    </p>
+                <li> Supply Chain Intern (Planning Team) • <a href="https://www.jnj.com/" title = "go to Johnson & Johnson" target="_blank">JOHNSON & JOHNSON </a></li>
+                    <p class="timecity">Shanghai • January 2021 – June 2021 • China Head Office</p>
+                    <p>
+                        • Participated in Watsons & JNJ VMR (Vendor Managed Replenishment) Project by updating data. Conduct the PBI dashboard UAT.<br>
+                        • Participated in the Machine Learning Project for FMCG sales forecasting. Collecting, cleansing, and summarizing the data of promotion and others for ML system.<br>
+                        • Established and completed S&OP (Sales & Operations Planning) Data Maintenance Guide Manual.<br>
+                    </p>
+            </ul>
         </div>
 
     </section>
@@ -81,52 +119,75 @@
     <!--content-education-->
     <section class="author-section" >
         <div class="section-title" id="sec2"  onclick="toggleSection('2')">
-            <span id="arrow2">▼</span> WORK EXPERIENCE
+            WORK EXPERIENCE<br><br><span id="arrow2">▼</span>
         </div>
 
         <div class="hidden" id="section-details2">
         Here are the details about the section. Click the tit   ``          le to fold/unfold this section.
         </div>
-
-
     </section>
 
     <!--content-other experience-->
     <section class="author-section" >
         <div class="section-title" id="sec3"  onclick="toggleSection('3')">
-            <span id="arrow3">▼</span> WORK EXPERIENCE
+            WORK EXPERIENCE<br><br><span id="arrow3">▼</span>
         </div>
 
         <div class="hidden" id="section-details3">
         Here are the details about the section. Click the tit   ``          le to fold/unfold this section.
         </div>
-
     </section>
+
     <!--content-skills-->
     <section class="author-section" >
         <div class="section-title" id="sec4"  onclick="toggleSection('4')">
-            <span id="arrow4">▼</span> WORK EXPERIENCE
+            WORK EXPERIENCE<br><br><span id="arrow4">▼</span>
         </div>
 
         <div class="hidden" id="section-details4">
         Here are the details about the section. Click the tit   ``          le to fold/unfold this section.
         </div>
-
-
     </section>
-    <!--footer-->   
-    <section >
-        <div class="author-footer">
-            <p>
-                Cooko
-            </p>
-            this is footer
+
+
+    <!--icon part-->
+    <section class ="author-icon">
+        
+        <div class="title"> Contact with Me  <br> _______</div>
+        <div class = "icons"> 
+
+            <a href="javascript:void(0);" onclick="LinkedInalert();" title="Visit my LinkedIn"><i class='fab fa-linkedin'></i></a>
+            <a href="javascript:void(0);" onclick="Phonealert();" title="Call me"><i class="fas fa-phone"></i></a>
+            <a href="mailto:lian.mingyu@outlook.com?subject= Are you interested in this Job?" title="Email me"><i class="fas fa-envelope"></i></a>
+            <a href="ArthurResume.pdf" download="ArthurResume.pdf" title="Download my resume"><i class="fas fa-print"></i></a>
+
         </div>
-
+        <div class="contact-form">
+                <div class="form-group1">
+                    <p> Leave Me a Message</p>
+                    
+                    <input type="email" id="email" placeholder="Your Email with @" required><br>
+                    <label for="email">Please Input Your Email</label>
+                </div>
+                <div class="form-group2">
+                    <textarea id="message" placeholder="Your message" required></textarea><br>
+                    <button type="submit">Submit</button>
+                </div>
+        </div>
     </section>
 
+<!--footer-->   
+
+<div class="author-footer">
+    <img src="fulllogogray.png" alt="cannot find the resource" class = "footerlogo"> 
+    <p>
+        ©Arthur Lian 2024<br>
+        lian.mingyu@outlook.com
+
+    </p>
+
+</div>
 
 </body>
-
 
 </html>
