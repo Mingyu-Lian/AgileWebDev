@@ -1,5 +1,6 @@
 
 /*Page CSS*/
+
 body, html {
     margin: 0;
     padding: 0;
@@ -11,38 +12,95 @@ ul {
     list-style-type: none; 
 }
 
+/*night mode */
+.night-mode {
+    background-color: #333; 
+    color: rgb(226, 247, 244); 
+}
+
+.night-mode .logoheader {  
+    background-color :rgb(33, 116, 122);
+}
+
+.night-mode .logoheader  a {  
+    color: rgb(245, 241, 241);
+} 
+
+.night-mode .navi-bar {
+    height: 120%;
+    box-shadow: 0 10px 6px -6px rgb(204, 213, 213); 
+    padding-right: 5%;
+}
+
+.night-mode .logobar a:hover {
+    background-color: white; 
+    color: rgb(27, 141, 149); 
+}
+
+/*night mode author page */
+
+.night-mode .general-text h2{
+    color: rgb(212, 214, 218);
+}
+.night-mode .author-section li  {
+    color: rgb(209, 230, 232); 
+}
+
+.night-mode .author-section .timecity{
+    color: rgb(226, 237, 238); 
+}
+
+.night-mode .author-section p{
+    color: rgb(134, 151, 152); 
+}
+.night-mode .author-section a{
+    color: rgb(45, 157, 165); 
+}
+
 
 /*Header CSS*/
+
 .linebar {
     display: inline;
   }
 
 .func-bar{
-    
     width: 100%;
-    margin: 0; 
-    padding: 0; 
     box-sizing: border-box;
     background-color: black;
     color: white;
     font-family: "Courier New",monospace;
     font-weight:550;
     font-size: 80%;
-    text-align: right;
+    text-align:right;
     line-height:200%;
 }
 
 .funcli{
     display: inline-block;
     padding: 0 30px; 
-    border-left: 2px solid gray;
+    
 }
 
-.funcli:first-child {
-    border-left: none; 
+.funcli:hover {
+    color: black;
+    background-color: white;
+}
+
+.night-mode .author-icon .icons {
+    text-align: center;
+    font-size: 35px; 
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-color: rgba(232, 240, 241, 0.92);
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+    margin-bottom: 0.8%;
+    height: auto;  
 }
 
 /*logo Header CSS*/
+
 .logoheader {  
     background-color :rgb(254, 254, 254);
     color: black;
@@ -84,6 +142,7 @@ ul {
 }
 
 /*Video About me*/
+
 .author-video {
     position: relative;
     width: 100%; 
@@ -193,7 +252,9 @@ ul {
     color:  rgb(27, 141, 149);
     font-weight: bold;
 }
+
 /* for the portrait screen*/
+
 @media (max-width: 768px) { 
     .author-general {
         flex-direction: column; 
@@ -221,7 +282,6 @@ ul {
     }
 }
 
-
 /*Contend title  */
 
 .author-section{
@@ -229,6 +289,7 @@ ul {
     margin:  auto;
     
 }
+
 .section-title{
     font-family: 'Lucida Grande', Geneva, Verdana, sans-serif;
     font-size: 120%;
@@ -237,21 +298,24 @@ ul {
     color:white;
     cursor: pointer;
     height: 120px;
-
 }
+
 .author-section #sec1 {
     background: linear-gradient(to left, rgb(43, 95, 118),rgb(77, 138, 143));
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }    
+
 .author-section #sec2 {
     background: linear-gradient(to left, rgb(100, 92, 32), rgb(189, 171, 132));
  
 }
+
 .author-section #sec3 {
     background: linear-gradient(to left, rgb(132, 21, 29), rgb(155, 125, 110));
    
 }
+
 .author-section #sec4 {
     background: linear-gradient(to left, rgb(87, 59, 99), rgb(116, 107, 146));
     border-bottom-left-radius: 20px;
@@ -263,7 +327,6 @@ ul {
 }
 
 /*Contend details  */
-
 
 .author-section li {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -285,9 +348,7 @@ ul {
     font-weight: 700;
     margin-top: -0.3%;
     margin-right: 3%;
-    
 }
-
 
 .author-section p {
     font-family:Arial, Helvetica, sans-serif;
@@ -297,8 +358,7 @@ ul {
     font-weight: 300;
     margin-top: 0.3%;
     line-height: 150%;
-    margin-left:3%;
-    
+    margin-left:3%; 
 }
 
 /* icons*/
@@ -318,8 +378,6 @@ ul {
     margin-bottom: 1%;
 }
 
-
-
 .author-icon .icons {
     text-align: center;
     font-size: 35px; 
@@ -329,8 +387,7 @@ ul {
     border-top-right-radius: 40px;
     border-top-left-radius: 40px;
     margin-bottom: 0.8%;
-    height: auto;
-   
+    height: auto;  
 }
 
 .author-icon a {
@@ -346,8 +403,8 @@ ul {
     padding: 15px; 
 }
 
-
 /* form*/
+
 .contact-form {
     display: flex;
     flex-direction: row;
@@ -355,9 +412,7 @@ ul {
     border-bottom-left-radius: 40px;
     border-bottom-right-radius: 40px;
     padding: 40px;
-
 }
-
 
 .form-group1 p{
     font-family: 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -372,7 +427,6 @@ ul {
     font-family: Arial, Helvetica, sans-serif;
     font-size: smaller;
     color: rgba(255, 255, 255, 0.711);
-
 }
 
 input[type="email"], textarea {
@@ -389,7 +443,6 @@ input[type="email"], textarea {
 .form-group2 {
     width: 100%;
     margin-left: 20%;
-
 }
 
 .form-group2 #message{
@@ -418,11 +471,11 @@ button:hover {
     background-color: rgb(7, 51, 52);
 }
 
-
 /* Footer*/
+
 .author-footer{
-    display: flex; /* 启用Flexbox布局 */
-    align-items: center; /* 垂直居中对齐项目 */
+    display: flex; 
+    align-items: center; 
     height :150px;
     width: 100%;
     background-color: rgb(13, 40, 41);
@@ -433,7 +486,6 @@ button:hover {
     line-height: 200%;
 }
 
-
 .author-footer img{
     position: relative;
     margin-bottom: 4%;
@@ -441,7 +493,6 @@ button:hover {
     margin-left: 35%;
     max-width:  180px;
     min-width: 100px;
-   
 }
 
 

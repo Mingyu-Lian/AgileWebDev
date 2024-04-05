@@ -1,4 +1,11 @@
 
+// day/night mode
+window.onload = function() {
+  document.getElementById('theme').addEventListener('click', function() {
+    document.body.classList.toggle('night-mode');
+  });
+};
+
 
 //author function in hiding
 function toggleSection(sectionId) {
