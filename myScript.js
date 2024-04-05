@@ -5,7 +5,13 @@ window.onload = function() {
     document.body.classList.toggle('night-mode');
   });
 };
-
+// print
+document.addEventListener('DOMContentLoaded', function() {
+  var printButton = document.getElementById('printButton');
+  printButton.addEventListener('click', function() {
+      window.print(); 
+  });
+});
 
 //author function in hiding
 function toggleSection(sectionId) {

@@ -14,7 +14,7 @@ ul {
 
 /*night mode */
 .night-mode {
-    background-color: #333; 
+    background-color: rgb(58, 57, 57); 
     color: rgb(226, 247, 244); 
 }
 
@@ -121,12 +121,9 @@ ul {
 
 .fulllogo{ 
     width:240px;
+    margin-left: 3%;
 }
 
-.linebar logo{
-    display: inline-block;
-    margin: 0 5%; 
-}
 
 .logobar a {
     text-decoration: none; 
@@ -141,7 +138,7 @@ ul {
     color: white; 
 }
 
-/*Video About me*/
+/* author Video About me*/
 
 .author-video {
     position: relative;
@@ -205,7 +202,7 @@ ul {
     height: auto; 
 }
 
-/*General Summary */
+/* author General Summary */
 
 .author-general {
     display: flex;
@@ -253,7 +250,7 @@ ul {
     font-weight: bold;
 }
 
-/* for the portrait screen*/
+/* author for the portrait screen*/
 
 @media (max-width: 768px) { 
     .author-general {
@@ -282,7 +279,7 @@ ul {
     }
 }
 
-/*Contend title  */
+/* author Contend title  */
 
 .author-section{
     width: 80%;
@@ -326,7 +323,7 @@ ul {
     display: none;
 }
 
-/*Contend details  */
+/*author Contend details  */
 
 .author-section li {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -361,7 +358,7 @@ ul {
     margin-left:3%; 
 }
 
-/* icons*/
+/* arthuor icons*/
 
 .author-icon{
     width: 80%;
@@ -403,7 +400,7 @@ ul {
     padding: 15px; 
 }
 
-/* form*/
+/* author form*/
 
 .contact-form {
     display: flex;
@@ -473,7 +470,7 @@ button:hover {
 
 /* Footer*/
 
-.author-footer{
+.footer{
     display: flex; 
     align-items: center; 
     height :150px;
@@ -486,7 +483,7 @@ button:hover {
     line-height: 200%;
 }
 
-.author-footer img{
+.footer img{
     position: relative;
     margin-bottom: 4%;
     margin-top: 3%;
