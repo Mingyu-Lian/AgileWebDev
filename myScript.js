@@ -60,3 +60,41 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
+//concept type theme
+function typeWriter(text, i, fnCallback) {
+  if (i < (text.length)) {
+   document.querySelector("#typing-title").innerHTML = text.substring(0, i+1) +'<span aria-hidden="true"></span>';
+    setTimeout(function() {
+      typeWriter(text, i + 1, fnCallback)
+    }, 100);
+  }
+  else if (typeof fnCallback == 'function') {
+    setTimeout(fnCallback, 700);
+  }
+}
+
+function startDelete(text, i, fnCallback) {
+  if (i >= 5) {
+    document.querySelector("#typing-title").innerHTML = text.substring(0, i) +'<span aria-hidden="true"></span>';
+    setTimeout(function() {
+      startDelete(text, i - 1, fnCallback)
+    }, 100);
+  }
+  else if (typeof fnCallback == 'function') {
+    setTimeout(fnCallback, 700);
+  }
+}
+
+function StartTextAnimation() {
+  typeWriter("About Hyperlink...", 5, function(){
+  
+    startDelete("About Hyperlink...", "About Hyperlink...".length, function(){
+     
+      StartTextAnimation();
+    });
+  });
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  StartTextAnimation();
+});

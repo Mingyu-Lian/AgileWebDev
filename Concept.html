@@ -7,7 +7,14 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/x-icon" href="logo.png">
+    
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="myScript.js"></script>
+
 </head>
 
 <body>
@@ -17,12 +24,11 @@
         <li class = "linebar funcli" id="theme" title="Change Day/Night Theme"> Day/Night</li>
         <li class = "linebar funcli" id="printButton" title="Print the Page"> Print</li>
     </ul>
-</nav>
-
+    </nav>
 <!--logoheader Section-->
     <section class = "logoheader" >
 
-        <img src = "source\fulllogo.png" alt="cannot find the resource" class = "fulllogo" style="float:left">
+        <img src = "source/fulllogo.png" alt="cannot find the resource" class = "fulllogo" style="float:left">
         
         <nav class="navi-bar"> 
             <ul>
@@ -36,149 +42,245 @@
 
 
 <!--title part-->
-    <div>
-        <h1> About Hyperlink</h1>
+    <div class ="concept-img">
+        <h1 id="typing-title"> About Hyperlink...</h1>  
+        <img src="source/fulllogogray.png" alt="Cannot find resource" > 
     </div>
 
-
-
-<!--concept-->
-    <section>
-        <div>
-            <h2>What is a hyper link?</h2>
-        </div>
-        <div> 
-            <p>
-                https://www.lenovo.com/us/en/glossary/what-is-a-hyper-link/?orgRef=https%253A%252F%252Fwww.google.com%252F
-                A hyperlink, also known as a link or hypertext,
-                is an element in computer technology that connects one document
-                to another on the internet. It allows you to navigate from page
-                to page with a single click.
-            </p>
-            <p>
-                Typically, a hyperlink appears as an underlined piece of text,
-                 but it can also be an image or icon. When clicked,
-                 you can be taken to another webpage which may contain additional
-                 information about the topic or provide more detail about what was discussed in the original document.
-            </p>
-            <p>
-                Hyperlinks are essential for navigation around websites and allow users to quickly move from one topic
-                 to another without having to type out a new web address each time.
-            </p>
-
-             <p>
-                 They are also commonly used in emails and social media posts as a way
-                  of providing easy access to more detailed information.
-             </p>
-        </div>
-    </section>
-
-
-
-<!-- the use-->
-    <section>
-        <div>
-            <h2>What is a hyperlink used for?</h2>
-        </div>
-        <div>
-            <p>
-                Hyperlinks are used to allow users to easily navigate from one page to another,
-                 both within a website or between different websites.
-            </p>
-            <p>
-                They can also be used to link back and forth between different sections of content on the same page,
-                 allowing the user to quickly jump from one area to another with a single click.
-            </p>
-            <p>
-                In addition, hyperlinks can be used in emails, social media posts and other digital documents
-                 as a way of providing easy access for readers to more detailed information about a specific topic.
-            </p>
-            <p>
-                Hyperlinks can also be used as an effective tool for marketing,
-                 allowing companies to direct customers to their products with just one click.
-            </p>
-            <p>
-                With their versatility and convenience, it is no wonder that hyperlinks have
-                become such an integral part of the online world we live in today.
-            </p>
-            
-        </div>
-
-
-    </section>
-
-
-
-
-<!--Examples-->
-    <section>
-        <div>
-            <h2>Some Hyperlink Examples</h2>
-        </div>
-
-        <div>
-            <p>Text hyperlink. Hyperlink is embedded into a word or a phrase and makes this text clickable.</p>
-            <p>Image hyperlink. Hyperlink is embedded into an image and makes this image clickable.</p>
-            <p>Bookmark hyperlink. Hyperlink is embedded into a text or an image and takes visitors to another part of a web page.</p>
-            <p>E-mail hyperlink. Hyperlink is embedded into e-mail address and allows visitors to send an e-mail message to this e-mail address.</p>
-        </div>
-    </section>
-
-
-
-
-
-
-<!--How to implement-->
-    <section>
-        <div>
-            Developer part Code example
-        </div>
-        <div>
-            browser part Code example
-
-            <div>
-                <h3>http & https</h3>
-                <p>
-                    Hypertext transfer protocol (HTTP) is a protocol or set of communication rules for client-server communication.
-                    When you visit a website, your browser sends a HTTP request to the web server, which responds with an HTTP response.
-                    The web server and your browser exchange data as plaintext.
-                    In short, HTTP protocol is the underlying technology that powers network communication.
-                    As the name suggests, hypertext transfer protocol secure (HTTPS) is a more secure version or an extension of HTTP.
-                    In HTTPS, the browser and server establish a secure, encrypted connection before transferring data.
-                    https://aws.amazon.com/compare/the-difference-between-https-and-http/
-                </p>
-                <h3>how it works</h3>
-                <p>
-                    HTTP is an application layer protocol in the Open Systems Interconnection (OSI) network communication model.
-                     It defines several types of requests and responses. For example, when you want to view some data from a website, you send the HTTP GET request. If you want to send some information, like filling out a contact form, you send the HTTP PUT request.
-                        Similarly, the server sends different types of HTTP responses in the form of number codes and data. Here are some examples:
-                        200 - OK
-                        400 - Bad request
-                        404 - Resource not found
-                        This request-response communication is usually invisible to your users. It’s the communication method that the browser and web servers use, so the World Wide Web works consistently for everyone.
-                    
-                </p>    
-                <h3>Why choose HTTPS over HTTP?</h3>            
-                <p>list here 
-                    Security, Authority, Performance and analytics, 可以加一点翻页特效
-                </p>
+    <section class="row">
+        <section class ="col-2" id="concept-catelogue">
+            <div class="toc">
+                <ul>
+                    <li><a href="#concept-concept">CONCEPT</a></li>
+                    <li><a href="#concept-use">USE</a></li>
+                    <li><a href="#concept-examples">EXAMPLES</a></li>
+                    <li><a href="#concept-implement">IMPLEMENT</a></li>
+                </ul>
             </div>
-        </div>
+        </section>
+
+
+        <section  class ="col-8 concept-content" id="concept-details">
+
+           <!--concept-->
+           <section class = "concept-concept" id="concept-concept">
+                <div class = "title">
+                    <h2>What is a Hyperlink?</h2>
+                </div>
+                <div> 
+                    <p>
+                        <!--https://www.lenovo.com/us/en/glossary/what-is-a-hyper-link/?orgRef=https%253A%252F%252Fwww.google.com%252F-->
+                        A hyperlink, also known as a link or hypertext,
+                        is an element in computer technology that connects one document
+                        to another on the internet. It allows you to navigate from page
+                        to page with a single click.
+                    </p>
+                    <p>
+                        Typically, a hyperlink appears as an underlined piece of text,
+                        but it can also be an image or icon. When clicked,
+                        you can be taken to another webpage which may contain additional
+                        information about the topic or provide more detail about what was discussed in the original document.
+                    </p>
+                    <p>
+                        Hyperlinks are essential for navigation around websites and allow users to quickly move from one topic
+                        to another without having to type out a new web address each time.
+                        They are also commonly used in emails and social media posts as a way
+                        of providing easy access to more detailed information.
+                    </p>
+                </div>
+            </section>
+
+            <!-- the use-->
+            <section class="concept-use" id="concept-use">
+                <div class="title">
+                    <h2>What is a Hyperlink used for?</h2>
+                </div>
+                <div class="grid-container">
+                    <!-- part1 -->
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <h3>Navigation</h3>
+                            </div>
+                            <div class="flip-card-back">
+                                <p>Hyperlinks allow users to navigate from one page to another within a website or between different websites.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- part2 -->
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <h3>Internal Linking</h3>
+                            </div>
+                            <div class="flip-card-back">
+                                <p>Hyperlinks are utilized to link back and forth between different sections of content on the same page.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- part3 -->
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <h3>Access to Detailed Information</h3>
+                            </div>
+                            <div class="flip-card-back">
+                                <p>In emails, social media posts, and other digital documents, hyperlinks provide easy access for readers to more detailed information about a specific topic.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- part4 -->
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <h3>Marketing</h3>
+                            </div>
+                            <div class="flip-card-back">
+                                <p>Hyperlinks serve as an effective tool for marketing, allowing companies to direct customers to their products or services with just one click.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <p>
+                        With their versatility and convenience, it is no wonder that hyperlinks have
+                        become such an integral part of the online world.
+                    </p>
+                    
+                </div>
+            </section>
         
 
-    </section>
+            <!--Examples-->
+            <section class="concept-examples" id="concept-examples">
+                <div class="title">
+                    <h2>Some Hyperlink Examples</h2>
+                </div>
+
+                <div class="row example-content">
+                    <p>
+                    Hyperlinks show as many forms. For instance, an image, a part of text can all embed a Hyperlink.<br>
+                    In additon, a hypler link can also lead the user to different places, such as a webpage, a function,
+                    or a file. <br>
+                    Here list some examples and pelase have try!
+                    </p>
+                    <div class=" col-6"> 
+                        <a href="https://www.uwa.edu.au/" target="_blank"><img   src="source/clicklink.jpg" alt="Cannot find the resource" ></a>
+                    </div>
+                    <div class = "col-4 concept-examples-links">
+                        <a href="https://www.uwa.edu.au/" target="_blank" title="Go to UWA homepage">Click here </a>to go to UWA homepage<br>
+                        <a href="/source/clicklink.jpg" download="Walking.JPG" >Click here </a>to download the image<br>
+                        <a href="mailto:lian.mingyu@outlook.com" title="Send email to author">Click here </a>to send author an email <br>
+
+                    </div>           
+                </div>
+            </section>
+
+            <!--How to implement-->
+            <section class="concept-implement" id="concept-implement">
+                <div class="title">
+                    <h2>How to Implement</h2>
+                </div>
+
+                <p>In the implementation, developers can define the target,
+                    style, and behavior of hyperlinks through HTML, 
+                    CSS, and JavaScript coding, while the browser is 
+                    responsible for parsing these codes and, based on user actions,
+                    loading and displaying the content linked to. 
+                    This collaboration ensures that hyperlinks effectively guide users
+                    in navigating and accessing information on the web.</p>
+
+            
+                <div class="implementation-container">
+                    <div class="developer-side">
+                        <h3>Developer Side</h3>
+                        <p class="codetype">HTML:</p>
+                        <div class="code-example">
+                            <code>
+                                &lt;a href="https://www.uwa.edu.au/" target="_blank" &gt;Click here &lt;/a&gt;<br>to go to UWA homepage
+                            </code>
+                        </div>
+                        <p class="codetype">CSS:</p>
+                        <div class="code-example">
+                            <code>
+                                a {
+                                    color: rgb(32, 146, 155);<br>
+                                    font-style: italic; <br>
+                                    font-weight: 700;
+                                }
+                        </div>
+                        <p class="Description">
+                        ● Developers create hyperlinks in the HTML document 
+                        using the &lt;a&gt; tag, including the href attribute
+                        specifying the URL.<br><br>
+                        ● Developers can set additional attributes for hyperlinks,
+                        such as target (decides where to open the link, 
+                        like in a new window).<br><br>
+                        ● Hyperlinks are styled using CSS to enhance user experience and 
+                        align with the website's overall design, including changing colors, 
+                        fonts, hover effects, etc.<br>
+                        </p>
+                    </div>
+                    <div class="browser-side">
+                        <h3>Browser Side</h3>
+                        <div class="rendering-example">
+                            <a href="https://www.uwa.edu.au/" target="_blank" >Click here </a>to go to UWA homepage
+                        </div>
+                        <div class="Description">
+                          The browser will execute follwing steps:<br>
+                            <p>
+                                <p class = "subtitle">●  Parsing HTML<br></p>
+                                Recognizes  &lt;a&gt; tags and attributes.<br>
+                                Renders tags as clickable hyperlinks.<br><br>
+                                <p  class = "subtitle">●  Rendering Styles<br></p>
+                                Applies CSS-defined styles to hyperlinks.<br>
+                                Includes visual feedback like color, size, and hover effects.<br><br>
+                                <p  class = "subtitle">●  Handling User Interactions<br></p>
+                                Initiates server request upon hyperlink click.<br>
+                                Opens link in specified location based on target attribute.<br><br>
+                                <p  class = "subtitle">●  Navigation and Loading<br></p>
+                                Fetches and displays linked resources (HTML pages, images, files).<br><br>
+                                <p  class = "subtitle">●   Security and Privacy Considerations<br></p>
+                                Protects against phishing and manages cross-site requests.<br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
 
 
-<!--Extension-->
+                <div class="http-part">
 
-<section>
-    AJAX  Examples
-</section>
+                    <h4>HTTP & HTTPS</h4>
+                    <p> In the process of navigating and loading hyperlinks, 
+                        HTTP is integral to how browsers request, receive, and display web content.
+                    </p>
+                    <p>
+                        Hypertext transfer protocol (HTTP) is a protocol or set of communication rules for client-server communication.
+                        When you visit a website, your browser sends a HTTP request to the web server, which responds with an HTTP response.
+                        The web server and your browser exchange data as plaintext.
+                        In short, HTTP protocol is the underlying technology that powers network communication.<br>
+                        As the name suggests, hypertext transfer protocol secure (HTTPS) is a more secure version or an extension of HTTP.
+                        In HTTPS, the browser and server establish a secure, encrypted connection before transferring data.
+                        <!--https://aws.amazon.com/compare/the-difference-between-https-and-http/-->
+                    </p>
+                </div>
+                
+                
+
+            </section>
+
+
+         <!--Extension-->
+
+            <section>
+                AJAX  Examples
+            </section>
+
+        </section>
 
 <!--footer--> 
     <div class="footer">
-        <img src="source\fulllogogray.png" alt="cannot find the resource" class = "footerlogo"> 
+        <img src="source/fulllogogray.png" alt="cannot find the resource" class = "footerlogo"> 
         <p>
             ©Arthur Lian 2024<br>
             lian.mingyu@outlook.com
