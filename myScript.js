@@ -98,3 +98,7 @@ function StartTextAnimation() {
 document.addEventListener("DOMContentLoaded", function() {
   StartTextAnimation();
 });
+
+
+
+// history carousel
