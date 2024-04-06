@@ -305,7 +305,6 @@ ul {
 .author-section{
     width: 80%;
     margin:  auto;
-    
 }
 
 .section-title{
@@ -496,6 +495,7 @@ button:hover {
     background-position: center;
     padding-top: 1%;
     padding-bottom: 13%;
+    margin-top: 2%;
     margin-left: 10%;
     margin-right: 10%;
     border-top-left-radius: 50px;
@@ -555,8 +555,6 @@ button:hover {
     margin-right: 3%;
     text-align: justify;
 }
-
-
 
 /*concept - content - use*/
 
@@ -793,8 +791,6 @@ button:hover {
 .concept-concept, .concept-use, .concept-examples, .concept-implement {
     scroll-margin-top: 150px; 
 }
-
-
 
 
 /* Footer*/
