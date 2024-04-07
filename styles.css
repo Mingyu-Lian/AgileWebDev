@@ -795,11 +795,77 @@ button:hover {
 
 /* history carousel*/
 
+.carousel-container {
+    position: relative;
+    width: 75%;
+    height:450px;
+    overflow: hidden;
+    margin: auto;
+    margin-top: 3%;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+  }
+
+.carousel-logo img{
+    width: 150px; 
+    height: auto; 
+    opacity: 0.9;
+}
+.carousel-logo{
+    position: absolute;
+    top: 5%; 
+    right: 2%;
+    z-index: 20;
+}
+
+.carousel-slide {
+    display: flex;
+    transition: transform 0.7s ease-in-out;
+  }
+  
+.carousel-content {
+    flex: 0 0 100%;
+    position: relative; 
+  }
+
+.carousel-content, .carousel-slide img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+.carousel-container .text {
+    position: absolute;
+    top: 50%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    opacity: 0.8;
+    font-size: 100%;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    
+  }
+
+.carousel-title {
+    position: absolute;
+    font-family: monospace;
+    font-weight: bold;
+    top: 28%;
+    width: 100%;
+    text-align: left;
+    margin-left: 7%;
+    font-size: 500%;
+    color: white;
+    opacity: 0.8;
+    padding: 10px 0; /* Padding for aesthetic spacing */
+    z-index: 2; /* Ensure the title is above the images */
+  }
+  
 
 
 
-
-/* history carousel*/
+/* history timeline*/
 
 
 

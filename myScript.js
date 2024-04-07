@@ -1,4 +1,5 @@
 
+
 // day/night mode
 window.onload = function() {
   document.getElementById('theme').addEventListener('click', function() {
@@ -102,3 +103,45 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 // history carousel
+let index = 0;
+
+document.addEventListener('DOMContentLoaded', function() {
+  const slides = document.querySelectorAll('.carousel-slide img');
+  const totalSlides = slides.length;
+  generateIndicators(totalSlides);
+  updateSlidePosition();
+
+  setInterval(() => {
+    index = (index + 1) % totalSlides;
+    updateSlidePosition();
+  }, 3000); // Change every 3 seconds
+
+  function updateSlidePosition() {
+    document.querySelector('.carousel-slide').style.transform = `translateX(${-index * 100}%)`;
+    updateIndicators(index);
+  }
+
+  function generateIndicators(num) {
+    const indicators = document.querySelector('.carousel-indicators');
+    for (let i = 0; i < num; i++) {
+      const dot = document.createElement('span');
+      dot.classList.add('dot');
+      dot.addEventListener('click', () => {
+        index = i;
+        updateSlidePosition();
+      });
+      indicators.appendChild(dot);
+    }
+  }
+
+  function updateIndicators(activeIndex) {
+    const dots = document.querySelectorAll('.carousel-indicators .dot');
+    dots.forEach((dot, i) => {
+      if (i === activeIndex) {
+        dot.classList.add('active');
+      } else {
+        dot.classList.remove('active');
+      }
+    });
+  }
+});
