@@ -32,6 +32,12 @@ function LinkedInalert() {
   }
 }
 
+function Githubalert() {
+  if (confirm("Go to the Github Page?")) {
+      window.location.href = "https://github.com/Mingyu-Lian"; 
+  }
+}
+
 // author phone alert
 function Phonealert() {
   alert("please call +61(0) 435 718 939, thank you!");
@@ -143,24 +149,3 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 });
-
-//timeline
-function checkScroll() {
-  document.querySelectorAll('#timeline ul li .box').forEach((box) => {
-    const boxTop = box.getBoundingClientRect().top;
-    const boxHeight = box.offsetHeight;
-    const triggerPoint = window.innerHeight / 2; // Middle of the screen
-
-    if (boxTop + boxHeight > triggerPoint && boxTop < triggerPoint) {
-      box.classList.add('in-view');
-    } else {
-      box.classList.remove('in-view');
-    }
-  });
-}
-
-// Listen for the scroll event
-window.addEventListener('scroll', checkScroll);
-
-// Initialize the view on page load
-window.addEventListener('load', checkScroll);

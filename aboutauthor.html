@@ -18,7 +18,6 @@
     <nav class="func-bar"> 
         <ul >
             <li class = "linebar funcli" id="theme" title="Change Day/Night Theme"> Day/Night</li>
-            <li class = "linebar funcli" title="Change Language"> Language</li>
             <li class = "linebar funcli" id="printButton" title="Print the Page"> Print</li>
         </ul>
     </nav>
@@ -44,7 +43,8 @@
             <source src="source/FilmWA.mp4" type="video/mp4">
           </video>
           <div >
-            <h1 class="about-me">ABOUT ME ... </h1>
+            <h1 class="about-me" >ABOUT ME ... </h1>
+
             <p class="hash"> 
                 <span>UWA</span>
                 <span>-</span>
@@ -120,33 +120,84 @@
     <!--content-education-->
     <section class="author-section" >
         <div class="section-title" id="sec2"  onclick="toggleSection('2')">
-            WORK EXPERIENCE<br><br><span id="arrow2">▼</span>
+            EDUCATION<br><br><span id="arrow2">▼</span>
         </div>
 
         <div class="hidden" id="section-details2">
-        Here are the details about the section. Click the tit   ``          le to fold/unfold this section.
+            <ul>
+                <li class="maintitle">Master of Information Technology • <a href="https://www.uwa.edu.au/" title = "go to UWA" target="_blank">The University of Western Australia </a></li>
+                    <p class="timecity">July 2023 – Present</p>
+                        <p>Relational Database Mgmt System (SQL), Computational Thinking with Python, Computational Data Analysis (RStudio), Agile Web Development etc. Obtained 85 WAM and BCG GAMMA Prize.</p>
+                <li>Master of Commerce • Business Analytics & Logistics and Supply Chain Management  • <a href="https://www.sydney.edu.au/" title = "go to USYD" target="_blank">The University of Sydney </a></li>
+                    <p class="timecity"> March 2019 – August 2021 </p>
+                    <p>
+                        Quant Logistics and Transport, Applied GIS and Spatial Data Analytics (RStudio, ArcGIS), Statistical Learning & Data Mining (Python), Production and Operation Mgmt (SAP, SQL). Obtained 76 WAM.<br>
+                    </p>
+                <li>Bachelor of Logistics Management • <a href="https://en.tust.edu.cn/" title = "go to TUST" target="_blank">Tianjin University of Science & Technology </a></li>
+                    <p class="timecity">March 2014 – July 2018 </p>
+                    <p>
+                        Linear algebra, Logistics system simulation, Microeconomics etc. Participated 1 Year Erasmus Exchange Program in the <a href="https://www.uni.lodz.pl/en/" title = "go to UL" target="_blank">University of Lodz </a>(Poland). Obtained 87 WAM and First-class Scholarship.<br>
+                    </p>
         </div>
     </section>
 
     <!--content-other experience-->
     <section class="author-section" >
         <div class="section-title" id="sec3"  onclick="toggleSection('3')">
-            WORK EXPERIENCE<br><br><span id="arrow3">▼</span>
+            CAMPUS & ACADEMIC EXPERIENCE<br><br><span id="arrow3">▼</span>
         </div>
 
         <div class="hidden" id="section-details3">
-        Here are the details about the section. Click the tit   ``          le to fold/unfold this section.
+            <ul>
+                <li class="maintitle">International Volunteer</li>
+                    <p class="timecity">English Teacher • 2019 - 2020</p>
+                        <p>Provided basic English teaching for out-of-school children (9-18 years old) in two welfare educational institutions in Ho Chi Minh City, Vietnam with 5 days classes weekly in 2 months.</p>
+                <li>Consulting for Leor (NSW Gov Project) </li>
+                    <p class="timecity"> Leader of Consultant Team • 2019 </p>
+                    <p>
+                        Provided Leor (family preschool education institution) with strategic consulting services on employee recruitment and retentions.<br>
+                    </p>
+                <li>Airbnb Price Project • Data Analysis </li>
+                    <p class="timecity">Team Leader • 2019 </p>
+                    <p>
+                        Applied supervised methods to practice regression by Python to dig out what features may impact the property renting price. 440 thousand observations and 90 attributes are processed. 
+                    </p>
         </div>
     </section>
 
     <!--content-skills-->
     <section class="author-section" >
         <div class="section-title" id="sec4"  onclick="toggleSection('4')">
-            WORK EXPERIENCE<br><br><span id="arrow4">▼</span>
+            TECHNICAL SKILLS<br><br><span id="arrow4">▼</span>
         </div>
 
         <div class="hidden" id="section-details4">
-        Here are the details about the section. Click the tit   ``          le to fold/unfold this section.
+            <table>
+                <tr>
+                  <td>RStudio</td>
+                  <td>Java</td>
+                  <td>Power BI</td>
+                  <td>MS Office</td>
+                </tr>
+                <tr>
+                  <td>Python</td>
+                  <td>HTML</td>
+                  <td>Tableau</td>
+                  <td>MS Visio</td>
+                </tr>
+                <tr>
+                  <td>SQL</td>
+                  <td>CSS</td>
+                  <td>SAP</td>
+                  <td>Film Editing</td>
+                </tr>
+                <tr>
+                  <td>Shiny</td>
+                  <td>JavaScript</td>
+                  <td>ArcGIS</td>
+                  <td>Photography</td>
+                </tr>
+              </table>
         </div>
     </section>
 
@@ -158,10 +209,11 @@
         <div class = "icons"> 
 
             <a href="javascript:void(0);" onclick="LinkedInalert();" title="Visit my LinkedIn"><i class='fab fa-linkedin'></i></a>
+            <a href="javascript:void(0);" onclick="Githubalert();" title="Visit my Github"><i class="fab fa-github-square"></i></a>
             <a href="javascript:void(0);" onclick="Phonealert();" title="Call me"><i class="fas fa-phone"></i></a>
             <a href="mailto:lian.mingyu@outlook.com?subject= Are you interested in this Job?" title="Email me"><i class="fas fa-envelope"></i></a>
             <a href="source/ArthurResume.pdf" download="ArthurResume.pdf" title="Download my resume"><i class="fas fa-print"></i></a>
-
+            
         </div>
         <div class="contact-form">
                 <div class="form-group1">
