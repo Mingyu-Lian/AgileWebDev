@@ -91,9 +91,9 @@ function startDelete(text, i, fnCallback) {
 }
 
 function StartTextAnimation() {
-  typeWriter("About Hyperlink...", 5, function(){
+  typeWriter("About HYPERLINK", 5, function(){
   
-    startDelete("About Hyperlink...", "About Hyperlink...".length, function(){
+    startDelete("About HYPERLINK...", "About HYPERLINK...".length, function(){
      
       StartTextAnimation();
     });
