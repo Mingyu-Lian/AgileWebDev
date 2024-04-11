@@ -649,6 +649,53 @@ input[type="email"], textarea {
     text-align: justify;
 }
 
+#concept-concept h3{
+    text-align: center;
+    font-size: 1.8vw;
+    color:rgb(17, 110, 116) ;
+    margin-top: 5%;
+}
+.concept-content button{
+    background-color: rgb(27, 141, 149) ;
+    color:white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 2%;
+    border-radius: 10px;
+    border: transparent;
+    transition: all 0.3s;
+}
+
+.concept-content .button {
+    text-align: center;
+}
+
+.concept-content button:hover{
+    background-color: rgb(243, 245, 246);
+    color : rgb(27, 141, 149);
+    font-size: 120%;
+    font-weight: bolder;
+    box-shadow: 5px 5px 20px rgb(19, 95, 101);
+    transition: all 0.3s;
+}
+.concept-content button:active{
+    background-color: rgb(219, 221, 222);
+    color : rgb(27, 141, 149);
+    font-size: 110%;
+    transition: all 0.1s;
+}
+
+
+.concept-content .hyperlinkimg{
+    text-align: center;
+}
+
+.concept-content img{
+    text-align: center;
+    width: 40vw;
+    height: auto;margin: 3vh;
+    box-shadow: 10px 10px  20px rgb(15, 78, 83);
+    border-radius: 20px;
+}
     /*concept - content - use*/
     /* This part is under the assistant of ChatGPT, by asking it create flip stylesheet*/
 
