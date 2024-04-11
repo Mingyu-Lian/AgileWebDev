@@ -1,9 +1,11 @@
 // day/night mode
+// This part is under the help of ChatGPT by ask it to create nightmode function
 window.onload = function() {
   document.getElementById('theme').addEventListener('click', function() {
     document.body.classList.toggle('night-mode');
   });
 };
+
 // print
 document.addEventListener('DOMContentLoaded', function() {
   var printButton = document.getElementById('printButton');
@@ -13,6 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 //author function in hiding
+// This part is under the help of ChatGPT by ask it to create hiding function
 function toggleSection(sectionId) {
   var details = document.getElementById("section-details" + sectionId);
   var arrow = document.getElementById("arrow" + sectionId);
@@ -26,6 +29,7 @@ function toggleSection(sectionId) {
 }
 
 // author linkedin alert
+// This part is under the help of ChatGPT by ask it to create link arlert function
 function LinkedInalert() {
   if (confirm("Go to the LinkedIn Page?")) {
       window.location.href = "https://www.linkedin.com/in/lianmingyu/"; 
@@ -44,6 +48,7 @@ function Phonealert() {
 }
 
 // author form button click
+// This part is under the help of ChatGPT by ask it to create validation function
 document.addEventListener('DOMContentLoaded', function() {
   document.querySelector('button[type="submit"]').addEventListener('click', function(event) {
       event.preventDefault(); 
@@ -66,6 +71,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 //concept type theme
+// This part is under the help of ChatGPT by ask it to create typing aninamtion function
 function typeWriter(text, i, fnCallback) {
   if (i < (text.length)) {
    document.querySelector("#typing-title").innerHTML = text.substring(0, i+1) +'<span aria-hidden="true"></span>';
@@ -105,8 +111,8 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-
 // history carousel
+// This part is under the help of ChatGPT by ask it to create images carousel function
 let index = 0;
 
 document.addEventListener('DOMContentLoaded', function() {
