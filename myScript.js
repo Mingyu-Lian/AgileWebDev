@@ -111,30 +111,8 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-$(document).ready(function(){
-  var images = [
-    //the reference of the images are following
-    //https://depositphotos.com/photos/hyperlink.html
-    //https://www.volusion.com/blog/hyperlinks/
-    //https://trainings.internshala.com/blog/what-is-hyperlink-in-html/
-    //https://blog.mozilla.org/en/internet-culture/why-are-hyperlinks-blue-revisited/
-    //https://gshiftlabs.com/what-is-a-hyperlink/
-      "source/link1.jpg",
-      "source/link2.jpg",
-      "source/link3.jpg",
-      "source/link4.jpg",
-      "source/link5.jpg",
-      "source/link6.jpg"
-    ]
-  var currentIndex = 0;
 
-  $("#imagePlaceholder").attr("src", images[currentIndex]);
 
-  $("#changeImageButton").click(function(){
-      currentIndex = (currentIndex + 1) % images.length; 
-      $("#imagePlaceholder").attr("src", images[currentIndex]);
-  });
-});
 
 
 // history carousel
@@ -180,4 +158,30 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   }
+});
+
+//concept AJAX
+$(document).ready(function(){
+  let images = [
+    //the reference of the images are following
+    //https://depositphotos.com/photos/hyperlink.html
+    //https://www.volusion.com/blog/hyperlinks/
+    //https://trainings.internshala.com/blog/what-is-hyperlink-in-html/
+    //https://blog.mozilla.org/en/internet-culture/why-are-hyperlinks-blue-revisited/
+    //https://gshiftlabs.com/what-is-a-hyperlink/
+      "source/link1.jpg",
+      "source/link2.jpg",
+      "source/link3.jpg",
+      "source/link4.jpg",
+      "source/link5.jpg",
+      "source/link6.jpg"
+    ]
+  let currentIndex = 0;
+
+  $("#imagePlaceholder").attr("src", images[currentIndex]);
+
+  $("#changeImageButton").click(function(){
+      currentIndex = (currentIndex + 1) % images.length; 
+      $("#imagePlaceholder").attr("src", images[currentIndex]);
+  });
 });
