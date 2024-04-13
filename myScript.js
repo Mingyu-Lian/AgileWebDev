@@ -111,10 +111,6 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-
-
-
-
 // history carousel
 // This part is under the help of ChatGPT by ask it to create images carousel function
 let index = 0;
@@ -160,7 +156,7 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 });
 
-//concept AJAX
+//concept jQuery
 $(document).ready(function(){
   let images = [
     //the reference of the images are following
@@ -185,3 +181,24 @@ $(document).ready(function(){
       $("#imagePlaceholder").attr("src", images[currentIndex]);
   });
 });
+
+//history quote AJAX
+//This part is denereated by ChatGPT by giving the AJAX html file to generate the JS file.
+getRandomQuote();
+
+function getRandomQuote() {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            var response = JSON.parse(xhttp.responseText);
+            var randomIndex = Math.floor(Math.random() * response.length);
+            var randomQuote = response[randomIndex];
+            document.getElementById("quote").innerHTML = `"${randomQuote.text}"`;
+            // Check if author exists and does not contain the unwanted text
+            var authorText = randomQuote.author ? randomQuote.author.replace(', type.fit', '') : 'Unknown';
+            document.getElementById("author").innerHTML = `- ${authorText}`;
+        }
+    };
+    xhttp.open("GET", "https://type.fit/api/quotes", true);
+    xhttp.send();
+}

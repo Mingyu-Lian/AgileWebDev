@@ -649,13 +649,13 @@ input[type="email"], textarea {
     text-align: justify;
 }
 
-#concept-concept h3{
+#concept-concept h3 {
     text-align: center;
     font-size: 1.8vw;
     color:rgb(17, 110, 116) ;
     margin-top: 5%;
 }
-.concept-content button{
+.concept-content, #quote-container button{
     background-color: rgb(27, 141, 149) ;
     color:white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -665,11 +665,11 @@ input[type="email"], textarea {
     transition: all 0.3s;
 }
 
-.concept-content .button {
+.concept-content, #quote-container .button {
     text-align: center;
 }
 
-.concept-content button:hover{
+.concept-content, #quote-container button:hover{
     background-color: rgb(243, 245, 246);
     color : rgb(27, 141, 149);
     font-size: 120%;
@@ -677,7 +677,7 @@ input[type="email"], textarea {
     box-shadow: 5px 5px 20px rgb(19, 95, 101);
     transition: all 0.3s;
 }
-.concept-content button:active{
+.concept-content, #quote-container button:active{
     background-color: rgb(219, 221, 222);
     color : rgb(27, 141, 149);
     font-size: 110%;
@@ -1020,7 +1020,43 @@ input[type="email"], textarea {
     padding: 10px 0; 
     z-index: 2;
 }
-  
+    /* history AJAX*/
+#quote-container{
+    background-color: rgb(232, 230, 230);
+    width: 80%;
+    border-radius: 20px;
+    margin:auto;
+    margin-top: 3%;
+    height: auto;
+}
+
+#quote-container h4 {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-size: 1.3vw;
+    color:rgb(17, 110, 116) ;
+    padding-top: 3%;
+}
+
+#quote-container p {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: right;
+    padding-right: 3%;
+    font-style: italic;
+    font-size: 0.8vw;
+    color:rgb(122, 124, 124) ;
+}
+#quote-container .quotepart {
+    font-family:'Segoe UI', Geneva, Verdana, sans-serif;
+    color:rgb(57, 60, 60);
+    font-weight: 200;
+    font-size: 140%;
+    line-height: 160%;
+    padding-top: 3%;
+    text-align: center;
+    padding-bottom: 5%;
+}
+
 /* history timeline*/
 
 .timeline-title {
