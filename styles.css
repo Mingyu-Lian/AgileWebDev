@@ -655,7 +655,7 @@ input[type="email"], textarea {
     color:rgb(17, 110, 116) ;
     margin-top: 5%;
 }
-.concept-content, #quote-container button{
+.concept-content  button, #quote-container button{
     background-color: rgb(27, 141, 149) ;
     color:white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -665,11 +665,11 @@ input[type="email"], textarea {
     transition: all 0.3s;
 }
 
-.concept-content, #quote-container .button {
+.concept-content .button, #quote-container .button {
     text-align: center;
 }
 
-.concept-content, #quote-container button:hover{
+.concept-content button:hover, #quote-container button:hover{
     background-color: rgb(243, 245, 246);
     color : rgb(27, 141, 149);
     font-size: 120%;
@@ -677,13 +677,12 @@ input[type="email"], textarea {
     box-shadow: 5px 5px 20px rgb(19, 95, 101);
     transition: all 0.3s;
 }
-.concept-content, #quote-container button:active{
+.concept-content button:active, #quote-container button:active{
     background-color: rgb(219, 221, 222);
     color : rgb(27, 141, 149);
     font-size: 110%;
     transition: all 0.1s;
 }
-
 
 .concept-content .hyperlinkimg{
     text-align: center;
